@@ -57,6 +57,10 @@ h1 {
     text-shadow: 8px 8px #ff1f8f, 20px 20px #000000;
 }
 
+h2 {
+    color: white;
+}
+
 button {
     font-family: 'Montserrat', sans-serif;
     font-size:1em;

@@ -27,7 +27,7 @@ current data every time we need it.
 */
 const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
-const currentTurn = () => `It's ${currentPlayer}'s turn`;
+const currentTurn = () => `It's Play ${currentPlayer}'s turn`;
 /*
 We set the inital message to let the players know whose turn it is
 */
