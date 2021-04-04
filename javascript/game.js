@@ -1,38 +1,16 @@
-
 const statusDisplay = document.querySelector('.status');
-/*
-Here we declare some variables that we will use to track the 
-game state throught the game. 
-*/
-/*
-We will use gameActive to pause the game in case of an end scenario
-*/
+
 let onGame = true; // is the game happening?
-/*
-We will store our current player here, so we know whos turn 
-*/
 let currentPlayer = 1;
-/*
-We will store our current game state here, the form of empty strings in an array
- will allow us to easily track played cells and validate the game state later on
-*/
 let gameGrid = ["", "", "", 
 				"", "", "", 
 				"", "", ""];
-/*
-Here we have declared some messages we will display to the user during the game.
-Since we have some dynamic factors in those messages, namely the current player,
-we have declared them as functions, so that the actual message gets created with 
-current data every time we need it.
-*/
+
 const winningMessage = () => `Player ${currentPlayer} has won!`;
 const drawMessage = () => `Game ended in a draw!`;
-const currentTurn = () => `It's Play ${currentPlayer}'s turn`;
-/*
-We set the inital message to let the players know whose turn it is
-*/
-statusDisplay.innerHTML = currentTurn();
+const currentTurn = () => `It's Player ${currentPlayer}'s turn`;
 
+statusDisplay.innerHTML = currentTurn();
 function resultValidation() {
 	///////////
 	// Verifies if Player 1 Won 
